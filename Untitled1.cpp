@@ -47,7 +47,7 @@ hasilJelajah jelajah(vector<string> MAP, vector<string> visited,char castle,posi
             //cout<<"cek tetangga atas"<<endl;
             if(visited[pos.x-1][pos.y]=='0' && MAP[pos.x-1][pos.y]!='#')
             {
-                if(MAP[pos.x-1][pos.y]!='.' || MAP[pos.x-1][pos.y]!=castle)
+                if(MAP[pos.x-1][pos.y]!='.' && MAP[pos.x-1][pos.y]!=castle)
                 {
                     dispute = true;
                 }
@@ -62,7 +62,7 @@ hasilJelajah jelajah(vector<string> MAP, vector<string> visited,char castle,posi
             //cout<<"cek tetangga bawah"<<endl;
             if(visited[pos.x+1][pos.y]=='0' && MAP[pos.x+1][pos.y]!='#')
             {
-                if(MAP[pos.x+1][pos.y]!='.' || MAP[pos.x+1][pos.y]!=castle)
+                if(MAP[pos.x+1][pos.y]!='.' && MAP[pos.x+1][pos.y]!=castle)
                 {
                     dispute = true;
                 }
